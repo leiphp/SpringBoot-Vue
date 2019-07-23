@@ -3,6 +3,7 @@ package cn.lxtkj.firstappdemo.repository;
 import cn.lxtkj.firstappdemo.domain.User;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -30,5 +31,11 @@ public class UserRepository {
         //设置ID
         user.setId(id);
         return repository.put(id,user)==null;
+    }
+    /**
+     * 返回所有用户列表
+     */
+    public Collection<User> findAll(){
+        return repository.values();
     }
 }
