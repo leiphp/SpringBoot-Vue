@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -16,7 +17,7 @@ public class UserRepository {
     /**
      * 采用内存型存储方式 Map
      */
-    private final ConcurrentHashMap<Integer, User> repository = new ConcurrentHashMap<>();
+    private final ConcurrentMap<Integer, User> repository = new ConcurrentHashMap<>();
 
     private final static AtomicInteger idGenerator = new AtomicInteger();
     /**
@@ -36,6 +37,7 @@ public class UserRepository {
      * 返回所有用户列表
      */
     public Collection<User> findAll(){
+
         return repository.values();
     }
 }
