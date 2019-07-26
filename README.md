@@ -10,7 +10,8 @@ SpringBoot+vuejs搭建个人博客
 2. 创建子模块工作（module）  
     * 模型层：model  
     * 持久层：persistence 
-    * 表示层：web
+    * 表示层：web 
+3. 子模块依赖管理（dependencyManagement）  
 
 
 
