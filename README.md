@@ -15,8 +15,15 @@ SpringBoot+vuejs搭建个人博客
 4. 项目打包方式 
    * 构建Jar包 
    * 构建war包
-   * 构建ear包
-d打包命令:`mvn -Dmaven.test.skip -U clean package`
+   * 构建ear包  
+   打包命令:`mvn -Dmaven.test.skip -U clean package`  
+   jar包启动方式：切换到target目录输入命令 `java -jar first-app-demo-0.0.1-SNAPSHOT.jar`  
+5. 运行模式
+   * IDEA方式
+   * JAR/WAR方式  `java -jar first-app-demo-0.0.1-SNAPSHOT.jar`  
+   * Maven插件方式  
+     * 1.首先回到根目录 `F:\github-project\SpringBoot-blog` 
+     * 2.输入命令：`mvn spring-boot:run`
 
 
 
