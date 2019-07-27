@@ -23,7 +23,34 @@ SpringBoot+vuejs搭建个人博客
    * JAR/WAR方式  `java -jar first-app-demo-0.0.1-SNAPSHOT.jar`  
    * Maven插件方式  
      * 1.首先回到根目录 `F:\github-project\SpringBoot-blog` 
-     * 2.输入命令：`mvn spring-boot:run`
+     * 2.输入命令：`mvn spring-boot:run`  
+### 部署Guns  
+1. 下载guns源码`https://gitee.com/naan1993/guns` 
+2. 修改数据源  
+    * 目标：`Fguns\src\main\resources\application.yml`
+    * 修改内容：
+      * 2.1`spring.datasource` 
+      * 2.2`guns.flowable.datasource` 
+      * 2.3`guns.flowable.muti-datasource`  
+3. 启动Guns
+   * 3.1运行java文件[spring boot]
+      * guns\src\main\java\cn\stylefeng\guns\GunsApplication.java
+      * IDEA编辑器右键：run GunsApplication即可
+   
+   * 3.2运行jar文件 
+      * 对guns进行打包部署
+        * 1.找到guns 
+        * 2.运行命令，找到maven右上角的命令工具输入：`mvn clean package -Dmaven.test.skip=true` 
+        * 3.进入target运行jar文件,java -jar guns.jar
+        
+   * 3.3运行war包  
+     * 准备：修改guns中的pom文件打包方式  
+     * 对guns进行打包部署(覆盖之前target)   
+        * 1.找到guns 
+        * 2.运行命令，找到maven右上角的命令工具输入：`mvn clean package -Dmaven.test.skip=true` 
+        * 3.拷贝war包至web服务器Tomcat的webapps中（本地运行：进入target运行war文件,`java -jar guns.war`）
+        * 4.将war包改为ROOT.wa，并启动Tomcat
+
 
 
 
