@@ -51,6 +51,10 @@ SpringBoot+vuejs搭建个人博客
         * 3.拷贝war包至web服务器Tomcat的webapps中（本地运行：进入target运行war文件,`java -jar guns.war`）
         * 4.将war包改为ROOT.wa，并启动Tomcat
 
+### SpringBoot热部署 
+
+
+
 
 
 
