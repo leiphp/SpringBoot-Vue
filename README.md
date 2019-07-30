@@ -1,6 +1,11 @@
 # SpringBoot-blog
 SpringBoot+vuejs搭建个人博客
 
+### SpringBoot(主流) 
+1. 敏捷开发（整合框架）  
+2. 无需Tomcat
+3. 减少xml配置（没有xml）,配置文件  
+4. SpringCloud+SpringBoot 
 ### 构建项目
 1.图形化构建方式（http://start.spring.io/）  
 2.命令行方式（Maven）  
