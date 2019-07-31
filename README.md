@@ -6,6 +6,8 @@ SpringBoot+vuejs搭建个人博客
 2. 无需Tomcat
 3. 减少xml配置（没有xml）,配置文件  
 4. SpringCloud+SpringBoot 
+5. SpringBoot--和微服务有什么关联 
+目前来说SpringCloud(http接口+rest)，基于SpringBoot web组件封装SpringMVC 
 ### 构建项目
 1.图形化构建方式（http://start.spring.io/）  
 2.命令行方式（Maven）  
