@@ -2,13 +2,24 @@ package cn.lxtkj.firstappdemo.controller;
 
 import cn.lxtkj.firstappdemo.domain.User;
 import cn.lxtkj.firstappdemo.repository.UserRepository;
+import cn.lxtkj.firstappdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController {
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping("/createUser")
+    public String createUser(String name, Integer age){
+        userService.createUser(name, age);
+        return "success";
+    }
+    //下面是走Map保存
     private final UserRepository userRepository;
 
     @Autowired
