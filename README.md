@@ -57,7 +57,11 @@ SpringBoot+vuejs搭建个人博客
         * 2.运行命令，找到maven右上角的命令工具输入：`mvn clean package -Dmaven.test.skip=true` 
         * 3.拷贝war包至web服务器Tomcat的webapps中（本地运行：进入target运行war文件,`java -jar guns.war`）
         * 4.将war包改为ROOT.wa，并启动Tomcat
-
+### SpringBoot Web开发（） 
+推荐使用模板引擎技术（动态页面静态化），常用的模板引擎有以下几种：  
+1. freemaker  
+2. velocity  
+3. Thymeleaf 
 ### SpringBoot热部署  
 未完待续...
 
