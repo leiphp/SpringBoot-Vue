@@ -62,6 +62,34 @@ SpringBoot+vuejs搭建个人博客
 1. freemaker  
 2. velocity  
 3. Thymeleaf 
+### SpringBoot 整合jdbcTemplate  
+JdbcTemplate主要提供以下五类方法： 
+* execute方法：可以用于执行任何SQL语句，一般用于执行DDL语句； 
+* update方法及batchUpdate方法：update方法用于执行新增、修改、删除等语句；batchUpdate方法用于执行批处理相关语句； 
+* query方法及queryForXXX方法：用于执行查询相关语句； 
+* call方法：用于执行存储过程、函数相关语句。 
+### SpringBoot 整合jpa  
+JDK 5.0注解或XML描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中。  
+1. Java Persistence API（Java 持久层 API）：用于对象持久化的 API
+
+2. 作用：使得应用程序以统一的方式访问持久层
+
+3. JPA 与 Hibernate究竟是什么关系呢：
+
+ * JPA 是 Hibernate 的一个抽象，就像 JDBC 和 JDBC 驱动的关系
+
+ * JPA 是一种 ORM 规范，是 Hibernate 功能的一个子集 (既然 JPA 是规范，Hibernate 对 JPA 进行了扩展，那么说 JPA 是 Hibernate 的一个子集不为过)
+
+ * Hibernate 是 JPA 的一个实现
+
+4.JPA 包括三个方面的技术：
+
+ * ORM 映射元数据，支持 XML 和 JDK 注解两种元数据的形式
+
+ * JPA 的 API
+
+ * 查询语言：JPQL
+
 ### SpringBoot热部署  
 未完待续...
 
