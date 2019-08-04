@@ -68,7 +68,7 @@ JdbcTemplate主要提供以下五类方法：
 * update方法及batchUpdate方法：update方法用于执行新增、修改、删除等语句；batchUpdate方法用于执行批处理相关语句； 
 * query方法及queryForXXX方法：用于执行查询相关语句； 
 * call方法：用于执行存储过程、函数相关语句。 
-### SpringBoot 整合jpa  
+
 JDK 5.0注解或XML描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中。  
 1. Java Persistence API（Java 持久层 API）：用于对象持久化的 API
 
@@ -89,6 +89,8 @@ JDK 5.0注解或XML描述对象－关系表的映射关系，并将运行期的�
  * JPA 的 API
 
  * 查询语言：JPQL
+ 
+ ### SpringBoot 整合事务   
 
 ### SpringBoot热部署  
 未完待续...
