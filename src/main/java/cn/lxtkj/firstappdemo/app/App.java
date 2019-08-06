@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableJpaRepositories("cn.lxtkj.firstappdemo.dao")
 @EnableAutoConfiguration
 @EntityScan("cn.lxtkj.firstappdemo.entity")
-@EnableScheduling
+//@EnableScheduling//自动执行
 //标识该接口全部返还json格式
 public class App {
     public static void main(String[] args){

@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ScheduledTasks {
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 10000)
     public void test(){
-        System.out.println("我正在每隔1秒打印...");
+        System.out.println("我正在每隔10秒打印...");
     }
 }
