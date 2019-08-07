@@ -1,6 +1,6 @@
 package cn.lxtkj.config;
 
-import org.sang.service.UserService;
+import cn.lxtkj.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
