@@ -1,4 +1,4 @@
-package cn.lxtkj.firstappdemo.service;
+package cn.lxtkj.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

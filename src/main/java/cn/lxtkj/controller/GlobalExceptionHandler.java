@@ -1,4 +1,4 @@
-package cn.lxtkj.firstappdemo.controller;
+package cn.lxtkj.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ControllerAdvice;

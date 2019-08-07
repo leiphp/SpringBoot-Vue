@@ -1,7 +1,7 @@
-package cn.lxtkj.firstappdemo.config;
+package cn.lxtkj.config;
 
-import cn.lxtkj.firstappdemo.domain.User;
-import cn.lxtkj.firstappdemo.repository.UserRepository;
+import cn.lxtkj.domain.User;
+import cn.lxtkj.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

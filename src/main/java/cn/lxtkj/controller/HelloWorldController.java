@@ -1,4 +1,4 @@
-package cn.lxtkj.firstappdemo.controller;
+package cn.lxtkj.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -1,4 +1,4 @@
-package cn.lxtkj.firstappdemo;
+package cn.lxtkj;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

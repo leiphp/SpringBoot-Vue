@@ -1,4 +1,4 @@
-package cn.lxtkj.firstappdemo.domain;
+package cn.lxtkj.domain;
 
 /**
  * 用户模型

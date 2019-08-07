@@ -1,4 +1,4 @@
-package cn.lxtkj.firstappdemo.scheduled;
+package cn.lxtkj.scheduled;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

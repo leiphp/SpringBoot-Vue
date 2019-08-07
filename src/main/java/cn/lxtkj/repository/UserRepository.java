@@ -1,6 +1,6 @@
-package cn.lxtkj.firstappdemo.repository;
+package cn.lxtkj.repository;
 
-import cn.lxtkj.firstappdemo.domain.User;
+import cn.lxtkj.domain.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;

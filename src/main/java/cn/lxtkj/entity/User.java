@@ -1,4 +1,4 @@
-package cn.lxtkj.firstappdemo.entity;
+package cn.lxtkj.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

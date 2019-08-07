@@ -1,14 +1,11 @@
-package cn.lxtkj.firstappdemo.controller;
+package cn.lxtkj.controller;
 
-import cn.lxtkj.firstappdemo.dao.UserDao;
-//import cn.lxtkj.firstappdemo.domain.User;
-import cn.lxtkj.firstappdemo.entity.User;
-import cn.lxtkj.firstappdemo.repository.UserRepository;
-import cn.lxtkj.firstappdemo.service.UserService;
+import cn.lxtkj.dao.UserDao;
+//import User;
+import cn.lxtkj.entity.User;
+import cn.lxtkj.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
