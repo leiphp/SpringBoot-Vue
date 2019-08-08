@@ -5,12 +5,14 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 //@ComponentScan(basePackages = {"cn.lxtkj.controller","cn.lxtkj.service"})
 @ComponentScan("cn.lxtkj")
 @EnableJpaRepositories("cn.lxtkj.dao")
 @EnableAutoConfiguration
 @EntityScan("cn.lxtkj.entity")
+@EnableWebSecurity
 //@EnableScheduling//自动执行
 //标识该接口全部返还json格式
 public class Application {
