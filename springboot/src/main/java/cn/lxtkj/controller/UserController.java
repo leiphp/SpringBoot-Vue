@@ -1,43 +1,56 @@
 package cn.lxtkj.controller;
 
-import cn.lxtkj.dao.UserDao;
-//import User;
-import cn.lxtkj.entity.User;
+import cn.lxtkj.bean.RespBean;
 import cn.lxtkj.service.UserService;
+import cn.lxtkj.utils.Util;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
+/**
+ * Created by sang on 2017/12/24.
+ */
 @RestController
 public class UserController {
-    @Autowired
-    private UserService userService;
-    @Autowired
-    private UserDao userDao;
-    @RequestMapping("/createUser")
-    public String createUser(String name, Integer age){
-        userService.createUser(name, age);
-        return "success";
-    }
-    @RequestMapping("/getUser")
-    public User getUser(Integer id){
-        return userDao.findById(id).get();
 
+    @Autowired
+    UserService userService;
+
+    @RequestMapping("/currentUserName")
+    public String currentUserName() {
+        return Util.getCurrentUser().getNickname();
     }
-    //下面是走Map保存
-//    private final UserRepository userRepository;
-//
-//    @Autowired
-//    public UserController(UserRepository userRepository){
-//        this.userRepository = userRepository;
-//    }
-//    @PostMapping("/person/save")
-//    public User save(@RequestParam  String name){
-//        User user = new User();
-//        user.setName(name);
-//        if(userRepository.save(user)){
-//            System.out.printf("用户对象：%s保存成功",user);
-//        }
-//        return user;
-//    }
+
+    @RequestMapping("/currentUserId")
+    public Long currentUserId() {
+        return Util.getCurrentUser().getId();
+    }
+
+    @RequestMapping("/currentUserEmail")
+    public String currentUserEmail() {
+        return Util.getCurrentUser().getEmail();
+    }
+
+    @RequestMapping("/isAdmin")
+    public Boolean isAdmin() {
+        List<GrantedAuthority> authorities = Util.getCurrentUser().getAuthorities();
+        for (GrantedAuthority authority : authorities) {
+            if (authority.getAuthority().contains("超级管理员")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @RequestMapping(value = "/updateUserEmail",method = RequestMethod.PUT)
+    public RespBean updateUserEmail(String email) {
+        if (userService.updateUserEmail(email) == 1) {
+            return new RespBean("success", "开启成功!");
+        }
+        return new RespBean("error", "开启失败!");
+    }
 }
