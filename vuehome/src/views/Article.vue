@@ -10,12 +10,12 @@
         <div class="news_about"><strong>简介</strong> :公共物资：我们涉及露营的深度西藏自驾线路（川藏16天、阿里小北17天），随车会配置炉头、气罐、炊具等野炊装备、常规外伤药、高原急救药品、氧气瓶，构成公共物资。</div>
         <div class="news_content">
           <ul>
-            <p><img src="images/a1.jpg"></p>
+            <p><img src="../assets/images/a1.jpg"></p>
             <p>公共物资：我们涉及露营的深度西藏自驾线路（川藏16天、阿里小北17天），随车会配置炉头、气罐、炊具等野炊装备、常规外伤药、高原急救药品、氧气瓶，构成公共物资。</p>
-            <p><img src="images/ex01.jpg"></p>
-            <p><img src="images/a1.jpg"></p>
+            <p><img src="../assets/images/ex01.jpg"></p>
+            <p><img src="../assets/images/a1.jpg"></p>
             <p>公共物资：我们涉及露营的深度西藏自驾线路（川藏16天、阿里小北17天），随车会配置炉头、气罐、炊具等野炊装备、常规外伤药、高原急救药品、氧气瓶，构成公共物资。</p>
-            <p><img src="images/ex01.jpg"></p>
+            <p><img src="../assets/images/ex01.jpg"></p>
           </ul>
         </div>
         <div class="fenx">分享：</div>
@@ -48,11 +48,11 @@
           <!--载入画面(可删除)-->
           <div class="pic"><!--图片列表-->
             <ul>
-              <li><a href="#1"><img src="images/1m.jpg" thumb="" alt="酷站代码整理" text="图片1更详细的描述文字" /></a></li>
-              <li><a href="#2"><img src="images/2m.jpg" thumb="" alt="酷站代码特效大全" text="图片2更详细的描述文字" /></a></li>
-              <li><a href="#3"><img src="images/3m.jpg" thumb="" alt="酷站代码特效" text="图片3更详细的描述文字" /></a></li>
-              <li><a href="#4"><img src="images/4m.jpg" thumb="" alt="酷站代码素材" text="图片4更详细的描述文字" /></a></li>
-              <li><a href="#5"><img src="images/5m.jpg" thumb="" alt="酷站代码教程" text="图片5更详细的描述文字" /></a></li>
+              <li><a href="#1"><img src="../assets/images/1m.jpg" thumb="" alt="酷站代码整理" text="图片1更详细的描述文字" /></a></li>
+              <li><a href="#2"><img src="../assets/images/2m.jpg" thumb="" alt="酷站代码特效大全" text="图片2更详细的描述文字" /></a></li>
+              <li><a href="#3"><img src="../assets/images/3m.jpg" thumb="" alt="酷站代码特效" text="图片3更详细的描述文字" /></a></li>
+              <li><a href="#4"><img src="../assets/images/4m.jpg" thumb="" alt="酷站代码素材" text="图片4更详细的描述文字" /></a></li>
+              <li><a href="#5"><img src="../assets/images/5m.jpg" thumb="" alt="酷站代码教程" text="图片5更详细的描述文字" /></a></li>
             </ul>
           </div>
         </div>
@@ -118,7 +118,7 @@
           <li><a href="/">索尼</a></li>
         </ul>
       </div>
-      <div class="ad" id="r_ad"> <img src="images/03.jpg"> </div>
+      <div class="ad" id="r_ad"> <img src="../assets/images/03.jpg"> </div>
 
     </div>
     <!--r_box end -->
