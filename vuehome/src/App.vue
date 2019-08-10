@@ -13,12 +13,12 @@
     </div>
     <nav id="topnav">
       <ul>
-        <a href="/" target="_blank">网站首页</a>
-        <a href="/article/1" target="_blank">新闻中心</a>
-        <a href="/categiry" target="_blank">产品中心</a>
-        <a href="/about" target="_blank">关于我们</a>
-        <a href="/about" target="_blank">联系我们</a>
-        <a href="/about" target="_blank">网上留言</a>
+        <a href="/" >网站首页</a>
+        <a href="/article/1" >新闻中心</a>
+        <a href="/category" >产品中心</a>
+        <a href="/about" >关于我们</a>
+        <a href="/about" >联系我们</a>
+        <a href="/about" >网上留言</a>
       </ul>
     </nav>
   </header>
