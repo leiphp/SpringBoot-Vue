@@ -1,29 +1,48 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div>
+    <header>
+    <div class="topbg">
+      <ul class="topnav">
+        <a href="/ " target="_blank">Home</a><a href="/ " target="_blank">官方微博</a><a href="/ " target="_blank">关于我们</a>
+      </ul>
     </div>
-    <router-view/>
+    <div class="topbgline"></div>
+    <div class="logo">
+      <div class="logo_l f_l"><a href="/"><img src="@/assets/images/logo.png"></a></div>
+      <div class="logo_r f_r"><a href="/"><img src="@/assets/images/search.png"></a></div>
+    </div>
+    <nav id="topnav">
+      <ul>
+        <a href="/" target="_blank">网站首页</a>
+        <a href="/article/1" target="_blank">新闻中心</a>
+        <a href="/categiry" target="_blank">产品中心</a>
+        <a href="/about" target="_blank">关于我们</a>
+        <a href="/about" target="_blank">联系我们</a>
+        <a href="/about" target="_blank">网上留言</a>
+      </ul>
+    </nav>
+  </header>
+  <router-view/>
+  <footer>
+  <div class="endfoot">
+    <div class="ft-info f_l">
+      <div class="ftlogo"><a href="#" target="_blank"><img src="@/assets/images/ftlogo.png"></a></div>
+      <div class="ft-title">
+        <p>时尚设计，国内最优化的模板设计平台! </p>
+      </div>
+    </div>
+    <div class="ft-list f_r">
+      <div class="ft-nav"> <a href="#" target="_blank">关于我们</a> <a href="#" target="_blank">联系我们</a> <a href="#" target="_blank">版权声明</a> <a href="#" id="qaurl">问题反馈</a> <a href="#" target="_blank">商务合作</a> </div>
+      <p class="ft-copyright"> Copyright 2014 Comsenz Inc. Powered by Discuz! X3.2. 粤ICP2014008000-3号</p>
+    </div>
   </div>
+  <div id="tbox"> <a id="togbook" href="/"></a> <a id="gotop" href="javascript:void(0)"></a> </div>
+</footer>
+</div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import "./assets/css/base.css";
+@import "./assets/css/view.css";
+@import "./assets/css/media.css";
 </style>

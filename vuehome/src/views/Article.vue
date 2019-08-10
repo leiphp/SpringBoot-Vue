@@ -1,5 +1,5 @@
 <template>
-  <div class="article">
+  <article>
     <div class="l_box f_l">
       <div class="topnews">
         <h2>您现在的位置是：<a href="/">门户</a>><a href="/">新闻频道</a>> 查看内容</h2>
@@ -123,5 +123,21 @@
     </div>
     <!--r_box end -->
 
-  </div>
+</article>
 </template>
+
+<script>
+export default {
+  name: 'Article',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+// @import "../assets/css/base.css";
+// @import "../assets/css/view.css";
+// @import "../assets/css/media.css";
+</style>
