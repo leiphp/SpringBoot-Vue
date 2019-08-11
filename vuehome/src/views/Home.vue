@@ -205,11 +205,67 @@
 </template>
 
 <script>
+import request from '../utils/requestTwo'
 export default {
   name: 'Home',
   props: {
     msg: String
+},
+data() {
+  return {
+    list: [],
+    total: 0,
+    listLoading: true,
+    listQuery: {
+      page: 1,
+      limit: 15
+    },
+    title: '', // 标题
+    goodsStatus: '', // 商品状态
+    articleDetailDialogVisible: false
   }
+},
+created() {
+  this.getList()
+},
+methods: {
+  getList() {
+    const params = new URLSearchParams()
+    params.append('pageSize', this.listQuery.limit)
+    params.append('pageIndex', this.listQuery.page)
+    request.post('/index/articleList', params).then((res) => {
+      const { code, data } = res
+      if (code === 0) {
+        this.listLoading = false
+        this.list = data.list
+        this.total = parseInt(data.pager.total)
+        console.log('response info is:', this.list)
+      }
+    })
+  },
+  getDetail(id) { // 查看详情
+    request.get('/admin/Article/detail', {
+      params: {
+        aid: id
+      }
+    }).then((res) => {
+      const { code, data } = res
+      console.log('response info is:', res.data)
+      if (code === 0) {
+        this.aid = data.aid
+        this.title = data.title
+        this.author = data.author
+        this.click = data.click
+        this.description = data.description
+        this.content = data.content
+        this.path = data.path
+        this.addtime = data.addtime
+        this.view_count = data.view_count
+        this.getList()
+      }
+    })
+  }
+}
 }
 </script>
 
