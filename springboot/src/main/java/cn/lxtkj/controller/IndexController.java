@@ -23,7 +23,7 @@ public class IndexController {
     @Autowired
     ArticleService articleService;
 
-    @RequestMapping(value = "/index/articleList", method = RequestMethod.GET)
+    @RequestMapping(value = "/index/articleList", method = RequestMethod.POST)
     public Map<String, Object> getArticleByStateByAdmin(@RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "count", defaultValue = "2") Integer count, String keywords) {
         List<Article> articles = articleService.getArticleByState(-2, page, count, keywords);
         Map<String, Object> map = new HashMap<>();
