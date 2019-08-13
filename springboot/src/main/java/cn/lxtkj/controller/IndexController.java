@@ -5,10 +5,7 @@ import cn.lxtkj.service.ArticleService;
 import cn.lxtkj.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,6 +20,7 @@ public class IndexController {
     @Autowired
     ArticleService articleService;
 
+    @CrossOrigin
     @RequestMapping(value = "/index/articleList", method = RequestMethod.GET)
     public Map<String, Object> getArticleByStateByAdmin(@RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "count", defaultValue = "2") Integer count, String keywords) {
         List<Article> articles = articleService.getArticleByState(-2, page, count, keywords);
