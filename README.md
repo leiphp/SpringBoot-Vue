@@ -1,4 +1,4 @@
-# SpringBoot-blog
+# SpringBoot-Vue
 SpringBoot+vuejs搭建个人博客
 
 ### SpringBoot(主流) 
