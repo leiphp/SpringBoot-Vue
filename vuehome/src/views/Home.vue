@@ -218,7 +218,7 @@ data() {
     listLoading: true,
     listQuery: {
       page: 1,
-      limit: 15
+      limit: 10
     },
     title: '', // 标题
     goodsStatus: '', // 商品状态
@@ -231,9 +231,9 @@ created() {
 methods: {
   getList() {
     const params = new URLSearchParams()
-    params.append('pageSize', this.listQuery.limit)
-    params.append('pageIndex', this.listQuery.page)
-    request.post('/index/articleList', params).then((res) => {
+    params.append('count', this.listQuery.limit)
+    params.append('page', this.listQuery.page)
+    request.get('/index/articleList', params).then((res) => {
       const { code, data } = res
       if (code === 0) {
         this.listLoading = false
